@@ -1,0 +1,9 @@
+name: 김유진
+addr: 김포시
+foods:
+  - 삼겹살
+  - 마라탕
+isMan: false
+body:
+  weight: 60
+  height: 160
