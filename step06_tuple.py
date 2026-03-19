@@ -18,7 +18,7 @@ second="boy"
 '''
 tmp=first
 first=second
-first=tmp
+second=tmp
 '''
 first, second = second, first
 
