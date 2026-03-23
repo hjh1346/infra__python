@@ -1,0 +1,19 @@
+ip_addr=input("ip 주소입력:(예:192.168.0.1)")
+# .으로 분리해서 list에 담아오기
+ip_parts=ip_addr.split(".")
+#list안에 저장된 item확인
+print(ip_parts)
+binary_parts=[]
+
+for item in ip_parts:
+    #:08b눈 뒤에서부터 읽으면 b(2진수)로 변환하되 총 8자리로 변환하고 빈곳은  0으로 채움
+    print(f"{int(item):08b}")
+    #2진수 8자리로 구성된 값을 빈배열에 추가(append)하기
+    binary_parts.append(f"{int(item):08b}")
+
+print(binary_parts)
+result=".".join(binary_parts)
+print(result)
+
+print(f"입력한 ip: {ip_addr}")
+print(f"2진수 변환한 ip: {result}")
